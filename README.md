@@ -57,3 +57,5 @@ ClockSkew = TimeSpan.Zero
 ```
 
 In several arguments, many developer advice, sometimes the clockskew setting can make new issue. In case we are experiencing the issue, we can manipulate the expiration time. If we want to token expires after 1 hour, then we can set expiration to 55 minutes or let the token expires after 1 hour and 5 minutes. According our requirement
+
+Reference : https://stackoverflow.com/questions/47153080/clock-skew-and-tokens
