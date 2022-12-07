@@ -50,7 +50,7 @@ var tokenDescriptor = new SecurityTokenDescriptor
             };
 ```
 
-Actually we can get expiration feature by only using those configuration. But in my testing scenario we get 5 minutes in expiration difference. For instance, we log in at 12:00 am, and we set expiration 10 minutes after log in. The reality token will be expired after 15 minutes from login, it means there is 5 minutes difference. In order to deal with the issue we will set with this configuration in program.cs / startup.cs. So we will get expiration appropriate with our setting
+Actually we can get expiration feature by only using those configuration. But in my testing scenario we get 5 minutes in expiration differences. For instance, we log in at 12:00 am, and we set expiration time to 10 minutes after log in. The reality token will be expired after 15 minutes from login, it means there are 5 minutes differences. In order to overcome with the issue we will set with this configuration in program.cs / startup.cs. So we will get expiration appropriate with our setting
 
 ```
 ClockSkew = TimeSpan.Zero
